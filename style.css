@@ -166,6 +166,12 @@ section {
     display: flex;
     height: 400px;
     width: 400px;
+   /* Same as width for a perfect circle */
+    overflow: hidden; /* Ensures that the image doesn't overflow the container */
+    border-radius: 50%; /* Makes the container circular */
+    /* Center the image within the container */
+   
+    justify-content: center;
     margin: auto 0;
 
 }
@@ -280,7 +286,18 @@ margin-bottom:  1rem;
 }
 
 .about-pic {
-    border-radius: 2rem;
+    
+    display: flex;
+    height: 400px;
+    width: 400px;
+   /* Same as width for a perfect circle */
+    overflow: hidden; /* Ensures that the image doesn't overflow the container */
+    border-radius: 50%; /* Makes the container circular */
+    /* Center the image within the container */
+   
+    justify-content: center;
+    margin: auto 2;
+
 }
 
 .arrow {
@@ -328,13 +345,15 @@ margin-bottom:  1rem;
     display: flex;
     text-align:initial;
     flex-wrap: wrap; 
+
+  
 }
 
 article{
     display: flex ;
     width: 10rem;
-    justify-content: space-around ;
-    gap:0.5rem;
+    justify-content: space-evenly ;
+    gap: 0.5rem;
 }
 
 article .icon {

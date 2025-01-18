@@ -286,18 +286,10 @@ margin-bottom:  1rem;
 }
 
 .about-pic {
-    
-    display: flex;
-    height: 400px;
-    width: 400px;
-   /* Same as width for a perfect circle */
-    overflow: hidden; /* Ensures that the image doesn't overflow the container */
-    border-radius: 50%; /* Makes the container circular */
-    /* Center the image within the container */
-   
-    justify-content: center;
-    margin: auto 2;
-
+    width: 100%; /* Ensure the image stretches to fill the container */
+    height: 100%; /* Maintain aspect ratio by covering */
+    object-fit: cover; /* Ensure the image covers the container */
+    border-radius: 2rem; /* Add any necessary border styling */
 }
 
 .arrow {
@@ -373,14 +365,17 @@ article .icon {
 }
 
 .project-img {
-    border-radius: 2rem;
-    width: 90%;
-    height: 90%;
+    width: 100%; /* Ensure the image stretches to fill the container */
+    height: 100%; /* Maintain aspect ratio by covering */
+    object-fit: cover; /* Ensure the image covers the container */
+    border-radius: 2rem; /* Add any necessary border styling */
+    
 }
 
 .project-title {
     margin: 1rem;
     color: black;
+    text-align: center;
 }
 
 .project-btn {
